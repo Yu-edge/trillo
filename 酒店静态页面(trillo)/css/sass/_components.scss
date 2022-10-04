@@ -1,0 +1,50 @@
+.appraise {
+  & > a:link,
+  & > a:visited {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    box-shadow: 0 2px var(--color-primary);
+    margin: 0 auto;
+    padding: 1rem;
+
+    transition: all 0.3s;
+  }
+
+  & > a:hover {
+    color: var(--color-grey-light-3);
+    background-color: var(--color-primary);
+    box-shadow: 0 0.5rem 1rem var(--color-primary);
+  }
+
+  & > a:active {
+    box-shadow: 0 0.2rem 0.5rem var(--color-primary);
+  }
+}
+
+.book-now > div {
+  & > a:link,
+  & > a:visited {
+    display: inline-block;
+    padding: 1.8rem 10rem;
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+    border-radius: 4rem;
+    color: var(--color-grey-light-3);
+
+    transition: all 0.3s;
+  }
+
+  & > a:hover {
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.3);
+    transform: translateY(-3px);
+  }
+
+  & > a:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.2rem 0.5rem rgba($color: #000000, $alpha: 0.3);
+  }
+}
